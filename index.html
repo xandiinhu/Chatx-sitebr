@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat X</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>👋 Bem-vindo ao Chat X</h1>
+    <img src="zeex.png" alt="Zeex" style="max-width: 200px;" />
+    <p>Escolha seu personagem e comece a conversar com IA!</p>
+    <button onclick="login()">Entrar com Google</button><br><br>
+    <select id="personagem">
+      <option value="Zeex">Zeex</option>
+      <option value="Ângelo">Ângelo</option>
+      <option value="Ayla">Ayla</option>
+    </select><br><br>
+    <input type="text" id="mensagem" placeholder="Digite sua mensagem..." />
+    <button onclick="enviarMensagem()">Enviar</button>
+    <div id="resposta"></div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
